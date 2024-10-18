@@ -1,0 +1,102 @@
+/* Resetting margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-image: url("Digital Data of Network Technology.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Navbar styles */
+.navbar {
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed; /* Make it stick to the top */
+    top: 0;
+    z-index: 10; /* Ensure it's on top of other content */
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a i {
+    margin-right: 8px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Games Container */
+.games-container {
+    text-align: center;
+    padding: 50px;
+    margin-top: 100px; /* Adjust for space below the fixed navbar */
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.games-container h1 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+}
+
+/* Game List for one-item-per-line */
+.game-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.game-item {
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.game-item:hover {
+    background-color: #45a049;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .games-container {
+        width: 90%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
