@@ -1,0 +1,18 @@
+body {
+  background-image: url('../gaminglogo.avif'); /* Replace with your image URL */
+  background-size: cover; /* This ensures the image covers the whole background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+html, body {
+  height: 100%; /* Ensure body takes full height */
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+}
+
+#game-canvas {
+  background-color: #eee; /* Keep your background */
+}
+
